@@ -1,4 +1,4 @@
-var cart;
+var cart = [];
 
 function setCart(newCart) {
   cart = newCart;
@@ -14,4 +14,13 @@ function total() {
   }
 
   return t
+}
+
+function getCart() {
+  return cart
+}
+
+function addToCart(item) {
+  cart.push({item:(Math.floor((Math.random() * 100) + 1))})
+  console.log(`${item} has been added to your cart.`)
 }
